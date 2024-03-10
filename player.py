@@ -30,7 +30,6 @@ class Player(pygame.sprite.Sprite):
             if current_time -self.laser_time>=self.laser_cooldown:
                 self.ready=True
 
-
     def constraint(self):
         if self.rect.right>=self.player_constraint:
             self.rect.right=self.player_constraint
